@@ -62,6 +62,15 @@ public class veritabani extends SQLiteOpenHelper {
         }
         return veriler;
     }
+
+
+    public void veriSil(String isim)
+    {
+        SQLiteDatabase db = this.getWritableDatabase();
+        String selection = ROW_NAME + " LIKE ?";
+        String[] selectionArgs = {isim};
+        db.delete(DATABASE_TABLE,selection,selectionArgs);
+    }
 }
 
 

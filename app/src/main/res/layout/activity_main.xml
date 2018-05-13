@@ -33,13 +33,13 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_marginTop="225dp"
-        android:orientation="horizontal"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
 
         <Button
-            android:layout_marginLeft="50dp"
             android:id="@+id/ekle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -49,8 +49,13 @@
             android:id="@+id/listele"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
             android:text="Listele" />
+
+        <Button
+            android:id="@+id/sil"
+            android:text="Sil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
     </LinearLayout>
 
