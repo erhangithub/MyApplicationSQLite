@@ -71,6 +71,17 @@ public class veritabani extends SQLiteOpenHelper {
         String[] selectionArgs = {isim};
         db.delete(DATABASE_TABLE,selection,selectionArgs);
     }
+
+    public void veriGuncelle(String isim, String telefon)
+    {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put(ROW_NAME, isim);
+        values.put(ROW_PHONE, telefon);
+        String selection = ROW_NAME + " LIKE ?";
+        String[] selectionArgs = {"osmein"};
+        db.update(DATABASE_TABLE,values,selection,selectionArgs);
+    }
 }
 
 

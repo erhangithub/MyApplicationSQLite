@@ -52,6 +52,12 @@
             android:text="Listele" />
 
         <Button
+            android:id="@+id/guncelle"
+            android:text="Güncelle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
             android:id="@+id/sil"
             android:text="Sil"
             android:layout_width="wrap_content"

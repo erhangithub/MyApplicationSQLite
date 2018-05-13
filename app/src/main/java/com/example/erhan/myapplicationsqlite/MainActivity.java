@@ -56,6 +56,15 @@ public class MainActivity extends AppCompatActivity {
                 vt.veriSil(isim.getText().toString());
             }
         });
+
+        Button guncelle = (Button) findViewById(R.id.guncelle);
+        guncelle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                veritabani vt = new veritabani(MainActivity.this);
+                vt.veriGuncelle(isim.getText().toString(), telefon.getText().toString());
+            }
+        });
     }
 }
 
